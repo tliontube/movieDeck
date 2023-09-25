@@ -75,7 +75,35 @@ header h3{
     
 }
 .content{
-    height: 72em;
-    width: 10px;
-    background-color: aqua;
+    height: 350px;
+    width: 12.8em;
+    border: 1px solid black;
+    margin: 30px;
+}
+
+.img-div{
+    height: 250px;
+}
+.img-div img{
+    height: 250px;
+    width: 203px;
+}
+.content-detailFlex{
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 10px;
+}
+.content-details{
+    width: 90%;
+}
+.content-details h3{
+    text-align: center;
+}
+.content-details p{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.card-Content{
+    display: flex;
+    flex-wrap: wrap;
 }
