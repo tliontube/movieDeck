@@ -3,3 +3,79 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    background-color: black;
+    height: 50px;
+    width: 100vw;
+    /*position: absolute;*/
+    
+    
+}
+header h3{
+    color: white;
+    position: relative;
+    left: 20px;
+    top: 13px;
+}
+#search-Bar{
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   gap: 1em;
+}
+#search-name{
+    padding: 5px;
+    border-color: black;
+    border-radius: 5px;
+    width: 20em;
+}
+#submit-Btn{
+    width: 8rem;
+    background-color: black;
+    color: white;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+.sort{
+    display: flex;
+    justify-content: center;
+    gap: 0.7em;
+    margin: 10px 0px 0px 0px;
+}
+.date-Btn,.rating-Btn{
+    width: 17em;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.tab-Btn{
+    display: flex;
+    justify-content: left;
+    gap: 0.7em;
+    margin: 10px 0px 0px 30px;
+}
+.all-Btn,.fav-Btn{
+    width: 7em;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.active-tab{
+    background-color: black;
+    color: white;
+}
+.card-section{
+    border: 2px solid black;
+    width: 90vw;
+    position: absolute;
+    left: 5%;
+    margin-top: 30px;
+    height: 100vh;
+    
+}
+.content{
+    height: 72em;
+    width: 10px;
+    background-color: aqua;
+}
