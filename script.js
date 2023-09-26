@@ -1,7 +1,7 @@
 const api =
   "https://api.themoviedb.org/3/movie/top_rated?api_key=f531333d637d0c44abc85b3e74db2186&language=en-US&page=1 ";
 const cardContents = document.querySelector(".card-Content");
-
+const baseUrl = "https://image.tmdb.org/t/p/w500";
 async function fetchMovies() {
   const response = await fetch(api);
   const moviesData = await response.json();
@@ -11,11 +11,13 @@ async function fetchMovies() {
     content.classList.add("content");
 
     //image Poster and image code
+    const imagePath = details.poster_path;
     const imageDiv = document.createElement("div");
     imageDiv.classList.add("img-div");
     const imagePoster = document.createElement("img");
     imagePoster.classList.add("movieImg");
-    imagePoster.src = details.backdrop_path;
+    
+    imagePoster.src = `${baseUrl}${imagePath}`;
     imageDiv.appendChild(imagePoster);
     content.appendChild(imageDiv);
     cardContents.appendChild(content);
@@ -47,7 +49,7 @@ async function fetchMovies() {
     rating.textContent = "Rating: " + details.vote_average;
     ContentDetail.appendChild(rating);
     content.appendChild(ContentDetailFlex);
-    
+
     //Heart Button Div
     const heartButton = document.createElement("button");
     heartButton.classList.add("content-heart");
