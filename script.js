@@ -1,5 +1,5 @@
 const api =
-  "https://api.themoviedb.org/3/movie/top_rated?api_key=f531333d637d0c44abc85b3e74db2186&language=en-US&page=1 ";
+  "https://api.themoviedb.org/3/movie/top_rated?api_key=f531333d637d0c44abc85b3e74db2186&language=en-US&page=6 ";
 const cardContents = document.querySelector(".card-Content");
 const baseUrl = "https://image.tmdb.org/t/p/w500";
 async function fetchMovies() {
